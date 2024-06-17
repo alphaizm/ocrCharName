@@ -1,5 +1,9 @@
 # ocrCharName
+### python venv
+$ python -m venv .venv
+
 ## Ready EasyOCR
+
 ### PyTorch
 
 https://pytorch.org/
@@ -18,5 +22,7 @@ https://www.jaided.ai/easyocr/install/
 
 $ pip install easyocr
 
-### python venv
-$ python -m venv .venv
+## Crop Image
+### Image
+
+$ pip install Image
