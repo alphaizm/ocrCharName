@@ -17,3 +17,6 @@ Run this Command：pip3 install torch torchvision torchaudio --index-url https:/
 https://www.jaided.ai/easyocr/install/
 
 $ pip install easyocr
+
+### python venv
+$ python -m venv .venv
