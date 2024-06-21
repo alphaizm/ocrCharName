@@ -14,7 +14,8 @@ Package：Pip
 Language：Python  
 Compute Platform：CPU  
 ---
-Run this Command：pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+Run this Command：
+$ pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 
 ### EasyOCR
 
