@@ -27,7 +27,7 @@ $ pip install easyocr
 https://github.com/PaddlePaddle/PaddleOCR
 
 ### PaddleOCR
-install the CPU version
+install the CPU version  
 $ python -m pip install paddlepaddle -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 Install PaddleOCR Whl Package
