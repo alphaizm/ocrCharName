@@ -33,6 +33,8 @@ $ python -m pip install paddlepaddle -i https://pypi.tuna.tsinghua.edu.cn/simple
 install the GPU version  
 $ pip install paddlepaddle-gpu -i https://pypi.tuna.tsinghua.edu.cn/simple
 
+$ python -m pip install paddlepaddle-gpu==2.6.1.post120 -f https://www.paddlepaddle.org.cn/whl/windows/mkl/avx/stable.html
+
 Install PaddleOCR Whl Package  
 $ pip install "paddleocr>=2.7.3"  
  _※python-3.12　ではインストールエラーになる_
