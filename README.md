@@ -30,7 +30,7 @@ https://github.com/PaddlePaddle/PaddleOCR
 install the CPU version  
 $ python -m pip install paddlepaddle -i https://pypi.tuna.tsinghua.edu.cn/simple
 
-install the GPU version
+install the GPU version  
 $ pip install paddlepaddle-gpu -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 Install PaddleOCR Whl Package
