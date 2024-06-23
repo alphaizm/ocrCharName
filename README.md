@@ -42,6 +42,9 @@ $ pip install "paddleocr>=2.7.3"
 
 CUDA
 
+CUDA Toolkit Archive  
+https://developer.nvidia.com/cuda-toolkit-archive
+
 cuDNN Archive  
 https://developer.nvidia.com/rdp/cudnn-archive#a-collapse881-120
 
