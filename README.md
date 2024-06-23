@@ -23,7 +23,7 @@ https://www.jaided.ai/easyocr/install/
 
 $ pip install easyocr
 
-## Ready PaddleOCR 
+## Ready PaddleOCR ※結局、PaddleOCRを動かせなかった
 https://github.com/PaddlePaddle/PaddleOCR
 
 ### PaddleOCR
