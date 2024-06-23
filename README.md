@@ -40,6 +40,10 @@ $ pip install "paddleocr>=2.7.3"
  _※python-3.12　ではインストールエラーになる_
 
 
+CUDA
+
+cuDNN Archive  
+https://developer.nvidia.com/rdp/cudnn-archive#a-collapse881-120
 
 
 ## Crop Image
