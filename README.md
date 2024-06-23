@@ -54,6 +54,13 @@ C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\vXX.XX
 - include
 - lib
 
+パスを通す  
+Issue the control sysdm.cpl command.  
+タブ：詳細設定を選択  
+ボタン：環境変数(N)...  
+Path：C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.0\bin  
+
+
 
 ## Crop Image
 ### Image
