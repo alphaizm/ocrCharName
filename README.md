@@ -66,3 +66,15 @@ Path：C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.0\bin
 ### Image
 
 $ pip install Image
+
+# ADB (BlueStacks)
+"C:\Program Files\BlueStacks_nxt\HD-Adb.exe"
+
+$ .\HD-Adb.exe devices  
+> List of devices attached
+> * daemon not running. starting it now on port 5037 *
+> * daemon started successfully *
+> emulator-5554   device
+
+$ .\HD-Adb.exe connect 127.0.0.1:5555
+> connected to 127.0.0.1:5555
