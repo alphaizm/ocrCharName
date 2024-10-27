@@ -49,7 +49,7 @@ CUDA Toolkit Archive
 https://developer.nvidia.com/cuda-toolkit-archive
 
 cuDNN Archive  
-https://developer.nvidia.com/rdp/cudnn-archive#a-collapse881-120
+https://developer.nvidia.com/rdp/cudnn-archive
 
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\vXX.XX
 以下をコピー
