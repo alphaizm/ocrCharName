@@ -73,10 +73,15 @@ OK python -m pip install paddlepaddle-gpu==2.6.1.post120 -f https://www.paddlepa
 OK python -m pip install paddlepaddle-gpu==2.6.2 -f https://www.paddlepaddle.org.cn/whl/windows/mkl/avx/stable.html
 ```
 ↓
-```
+```sh
 python -m pip install paddleocr
 ```
 
+python console
+```
+import paddle
+paddle.utils.run_check()
+```
 
 ## Crop Image
 ### Image
