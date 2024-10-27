@@ -26,7 +26,8 @@ $ pip install easyocr
 ## Ready PaddleOCR ※結局、PaddleOCRを動かせなかった
 https://github.com/PaddlePaddle/PaddleOCR
 
-### PaddleOCR
+### 2024/07 頃でのトライ
+#### PaddleOCR
 install the CPU version  
 $ python -m pip install paddlepaddle -i https://pypi.tuna.tsinghua.edu.cn/simple
 
@@ -60,6 +61,12 @@ Issue the control sysdm.cpl command.
 ボタン：環境変数(N)...  
 Path：C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.0\bin  
 
+## 2024/10 頃でのトライ
+#### PaddleOCR
+install the CPU version 
+```terminal
+python -m pip install paddlepaddle-gpu==3.0.0b1 -i https://www.paddlepaddle.org.cn/packages/stable/cu123/
+```
 
 
 ## Crop Image
