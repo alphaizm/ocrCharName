@@ -69,6 +69,10 @@ NG python -m pip install paddlepaddle-gpu==3.0.0b1 -i https://www.paddlepaddle.o
 OK python -m pip install paddlepaddle-gpu==2.6.1.post120 -f https://www.paddlepaddle.org.cn/whl/windows/mkl/avx/stable.html
 OK python -m pip install paddlepaddle-gpu==2.6.2 -f https://www.paddlepaddle.org.cn/whl/windows/mkl/avx/stable.html
 ```
+↓
+```
+python -m pip install paddleocr
+```
 
 
 ## Crop Image
