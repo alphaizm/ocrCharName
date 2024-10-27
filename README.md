@@ -65,7 +65,8 @@ Path：C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.0\bin
 #### PaddleOCR
 install the CPU version 
 ```terminal
-python -m pip install paddlepaddle-gpu==3.0.0b1 -i https://www.paddlepaddle.org.cn/packages/stable/cu123/
+NG python -m pip install paddlepaddle-gpu==3.0.0b1 -i https://www.paddlepaddle.org.cn/packages/stable/cu123/
+OK python -m pip install paddlepaddle-gpu==2.6.1.post120 -f https://www.paddlepaddle.org.cn/whl/windows/mkl/avx/stable.html
 ```
 
 
