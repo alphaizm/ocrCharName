@@ -75,6 +75,7 @@ OK python -m pip install paddlepaddle-gpu==2.6.2 -f https://www.paddlepaddle.org
 ↓
 ```sh
 python -m pip install paddleocr
+pip install streamlit
 ```
 
 python console
