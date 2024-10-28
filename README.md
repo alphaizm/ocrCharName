@@ -70,7 +70,7 @@ Path：C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.0\bin
 install the CPU version
 ```
 pip install setuptools
- python -m pip install paddlepaddle-gpu==3.0.0b1 -i https://www.paddlepaddle.org.cn/packages/stable/cu123/
+python -m pip install paddlepaddle-gpu==3.0.0b1 -i https://www.paddlepaddle.org.cn/packages/stable/cu123/
 ```
 
 python console
