@@ -25,7 +25,7 @@ https://www.jaided.ai/easyocr/install/
 
 $ pip install easyocr
 
-## Ready PaddleOCR ※結局、PaddleOCRを動かせなかった
+## Ready PaddleOCR ~~※結局、PaddleOCRを動かせなかった~~
 https://github.com/PaddlePaddle/PaddleOCR
 
 ### 2024/07 頃でのトライ
