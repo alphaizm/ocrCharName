@@ -3,8 +3,17 @@ import pandas as pd
 from define import *
 from manage_csv import *
 
-# csv_data = csv_read_list_data(get_list_name_alliance())
-csv_data = csv_read_list_data(get_list_name_server())
+# モードの設定
+# output_mode = 'alliance'  # 'server' or 'alliance'
+# output_mode = 'alliance'
+output_mode = 'server'
+
+# csv_dataを初期化
+csv_data = []
+if output_mode == 'alliance':
+    csv_data = csv_read_list_data(get_list_name_alliance())
+else:
+    csv_data = csv_read_list_data(get_list_name_server())
 
 dic_data = {}
 dic_rank = {}
@@ -17,8 +26,12 @@ for row in csv_data:
         dic_data[char_name] = []
         dic_rank[char_name] = []
 
-# -10~0日分のデータを取得
-for idx in range(-133, 1):
+# 列数を表示
+len_col = len(csv_data[0]) - 3
+print('列数：' + str(len_col))
+
+# 列数 -1 ～ 0日分のデータを取得
+for idx in range(-len_col, 1):
     str_day = get_date(get_date_spec_YYYYMMDD(idx))
     dic_data[get_list_date_key()].append(str_day)
     dic_rank[get_list_date_key()].append(str_day)
@@ -35,17 +48,6 @@ for idx in range(-133, 1):
             dic_data[char_name].append(total_num)
             dic_rank[char_name].append(rank)
             rank += 1
-
-    # for row in csv_data:
-    #     char_name = row[get_list_name_key()]
-
-    #     if 'template' != char_name:
-    #         total_num = row[str_day]
-    #         dic_data[char_name].append(total_num)
-
-# dic_addの各要素数をデバッグ出力
-for key in dic_data.keys():
-    print(key + '：' + str(len(dic_data[key])))
 
 # データフレームの初期化
 df = pd.DataFrame(dic_data)
@@ -73,8 +75,23 @@ for col in df.columns:
             hovertemplate='%{fullData.name}<br>Date: %{x}<br>Total: %{y}<br>%{text}<extra></extra>'  # カスタムホバーテンプレートにランキングまたは範囲外を追加
         ))
 
-fig.update_layout(title='[サーバー]ランキング100位の総力推移',
-# fig.update_layout(title='[kyu]同盟員の総力推移',
+str_title = ''
+if output_mode == 'alliance':
+    str_title = '[Alliance]同盟員の総力推移'
+    fig.update_layout(title='[Alliance]同盟員の総力推移',
+                    xaxis_title='Date',
+                    yaxis_title='総力',
+                    yaxis=dict(
+                        tickformat=',',  # 'XXX,XXX,XXX' の形式で表示
+                    )
+                )
+else:
+    str_title = '[Server]ランキング100位の総力推移'
+
+
+
+
+fig.update_layout(title=str_title,
                     xaxis_title='Date',
                     yaxis_title='総力',
                     yaxis=dict(
@@ -83,7 +100,14 @@ fig.update_layout(title='[サーバー]ランキング100位の総力推移',
                 )
 
 # fig.show()
-# fig.write_html("_Alliance_kyu.html")
-fig.write_html("_Server_Ranking100.html")
+if output_mode == 'alliance':
+    fig.write_html("_Alliance_kyu.html")
+else:
+    fig.write_html("_Server_Ranking100.html")
+
 # 出力終了のダイアログ
-print('◆◆◆◆総力推移の出力は完了')
+if output_mode == 'alliance':
+    print('◆◆出力モード：同盟')
+else:
+    print('◆◆出力モード：サーバー')
+print('\t◆◆◆◆総力推移の出力は完了')
