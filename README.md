@@ -80,6 +80,15 @@ import paddle
 paddle.utils.run_check()
 ```
 
+## 2025/9 環境のVerUP
+#### PaddleOCR
+> https://www.paddlepaddle.org.cn/en/install/quick?docurl=/documentation/docs/en/develop/install/pip/linux-pip_en.html
+
+install the CPU version
+```
+python -m pip install paddlepaddle-gpu==3.2.0 -i https://www.paddlepaddle.org.cn/packages/stable/cu129/
+```
+
 ## Crop Image
 ### Image
 
