@@ -89,7 +89,6 @@ install the GPU version
 ```
 pip install setuptools
 python -m pip install paddlepaddle-gpu==3.2.0 -i https://www.paddlepaddle.org.cn/packages/stable/cu129/
-pip install paddleocr
 ```
 ↓
 > ERROR: Could not find a version that satisfies the requirement safetensors>=0.6.0 (from paddlepaddle-gpu) (from versions: none)
@@ -101,7 +100,11 @@ pip install safetensors
 >   Downloading safetensors-0.6.2-cp38-abi3-win_amd64.whl.metadata (4.1 kB)  
 > Downloading safetensors-0.6.2-cp38-abi3-win_amd64.whl (320 kB)  
 > Installing collected packages: safetensors  
-> Successfully installed safetensors-0.6.2
+> Successfully installed safetensors-0.6.2  
+↓
+```
+python -m pip install paddlepaddle-gpu==3.0.0b1 -i https://www.paddlepaddle.org.cn/packages/stable/cu123/
+```
 
 python console
 ```
@@ -111,6 +114,11 @@ paddle.utils.run_check()
 > Running verify PaddlePaddle program ...   
 > PaddlePaddle works well on 1 GPU.  
 > PaddlePaddle is installed successfully! Let's start deep learning with PaddlePaddle now.
+
+↓
+```
+pip install paddleocr
+```
 
 #### CUDA
 バージョン確認
