@@ -85,9 +85,11 @@ paddle.utils.run_check()
 #### PaddleOCR
 > https://www.paddlepaddle.org.cn/en/install/quick?docurl=/documentation/docs/en/develop/install/pip/linux-pip_en.html
 
-install the CPU version
+install the GPU version
 ```
+pip install setuptools
 python -m pip install paddlepaddle-gpu==3.2.0 -i https://www.paddlepaddle.org.cn/packages/stable/cu129/
+pip install paddleocr
 ```
 ↓
 > ERROR: Could not find a version that satisfies the requirement safetensors>=0.6.0 (from paddlepaddle-gpu) (from versions: none)
