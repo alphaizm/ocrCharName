@@ -1,4 +1,5 @@
 # ocrCharName
+
 ### python venv
 ```
 python -m venv .venv
@@ -91,6 +92,23 @@ python -m pip install paddlepaddle-gpu==3.2.0 -i https://www.paddlepaddle.org.cn
 ↓
 > ERROR: Could not find a version that satisfies the requirement safetensors>=0.6.0 (from paddlepaddle-gpu) (from versions: none)
 ERROR: No matching distribution found for safetensors>=0.6.0
+```
+pip install safetensors
+```
+> Collecting safetensors  
+>   Downloading safetensors-0.6.2-cp38-abi3-win_amd64.whl.metadata (4.1 kB)  
+> Downloading safetensors-0.6.2-cp38-abi3-win_amd64.whl (320 kB)  
+> Installing collected packages: safetensors  
+> Successfully installed safetensors-0.6.2
+
+python console
+```
+import paddle
+paddle.utils.run_check()
+```
+> Running verify PaddlePaddle program ...   
+> PaddlePaddle works well on 1 GPU.  
+> PaddlePaddle is installed successfully! Let's start deep learning with PaddlePaddle now.
 
 #### CUDA
 バージョン確認
