@@ -88,6 +88,9 @@ install the CPU version
 ```
 python -m pip install paddlepaddle-gpu==3.2.0 -i https://www.paddlepaddle.org.cn/packages/stable/cu129/
 ```
+↓
+> ERROR: Could not find a version that satisfies the requirement safetensors>=0.6.0 (from paddlepaddle-gpu) (from versions: none)
+ERROR: No matching distribution found for safetensors>=0.6.0
 
 #### CUDA
 バージョン確認
